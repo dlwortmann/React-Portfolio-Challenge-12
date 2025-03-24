@@ -4,23 +4,24 @@ import About from './About';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Resume from './Resume';
+import { Outlet } from 'react-router-dom'
 
-function Header() {
-    const [currentPage, handlePageChange] = useState("About")
-    const renderPage = () => {
-        switch(currentPage) {
-            case "About":
-                return <About />;
-            case "Portfolio":
-                return <Portfolio />;
-            case "Contact":
-                return <Contact />;
-            case "Resume":
-                return <Resume />;
-            default: 
-                return <About />;                
-        }
-    };
+export function Header() {
+    const [currentPage, setCurrentPage] = useState("About")
+    // const renderPage = () => {
+    //     switch(currentPage) {
+    //         case "About":
+    //             return <About />;
+    //         case "Portfolio":
+    //             return <Portfolio />;
+    //         case "Contact":
+    //             return <Contact />;
+    //         case "Resume":
+    //             return <Resume />;
+    //         default: 
+    //             return <About />;                
+    //     }
+    // };
     return (
         <div>
             <nav className=''>
@@ -28,10 +29,11 @@ function Header() {
             </nav>
             <Navigation
             currentPage={currentPage}
-            handlePageChange={handlePageChange}/>
+            setCurrentPage={setCurrentPage}/>
+            {/* <Outlet />
             <main>
                 {renderPage(currentPage)}
-            </main>
+            </main> */}
         </div>
     )
 };

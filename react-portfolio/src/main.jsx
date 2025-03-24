@@ -8,26 +8,28 @@ import About from './components/About.jsx'
 import Portfolio from './components/Portfolio.jsx'
 import Contact from './components/Contact.jsx'
 import Resume from './components/Resume.jsx'
+import ErrorPage from './components/Error.jsx'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
-        path: '/About',
+        path: 'About',
         element: <About />,
       },
       {
-        path: '/Portfolio',
+        path: 'Portfolio',
         element: <Portfolio />,
       },
       {
-        path: '/Contact',
+        path: 'Contact',
         element: <Contact />,
       },
       {
-        path: '/Resume',
+        path: 'Resume',
         element: <Resume />,
       }
     ]
