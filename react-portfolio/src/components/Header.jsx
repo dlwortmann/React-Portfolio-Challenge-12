@@ -7,21 +7,8 @@ import Resume from './Resume';
 import { Outlet } from 'react-router-dom'
 
 export function Header() {
-    const [currentPage, setCurrentPage] = useState("About")
-    // const renderPage = () => {
-    //     switch(currentPage) {
-    //         case "About":
-    //             return <About />;
-    //         case "Portfolio":
-    //             return <Portfolio />;
-    //         case "Contact":
-    //             return <Contact />;
-    //         case "Resume":
-    //             return <Resume />;
-    //         default: 
-    //             return <About />;                
-    //     }
-    // };
+    const [currentPage, setCurrentPage] = useState("/About")
+
     return (
         <div>
             <nav className=''>
@@ -30,10 +17,8 @@ export function Header() {
             <Navigation
             currentPage={currentPage}
             setCurrentPage={setCurrentPage}/>
-            {/* <Outlet />
-            <main>
-                {renderPage(currentPage)}
-            </main> */}
+            <Outlet />
+            
         </div>
     )
 };

@@ -7,7 +7,8 @@ function Navigation() {
         <ul className=''>
             <li className=''>
                 <Link
-                    to='/About'
+                    to='/'
+                    aria-label='About'
                     className={currentPage === '/About' ? 'nav-link active' : 'nav-link'}>
                     About Me
                 </Link>
@@ -15,6 +16,7 @@ function Navigation() {
             <li className=''>
                 <Link
                     to='/Portfolio'
+                    aria-label='Portfolio'
                     className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'} >
                     My Portfolio
                 </Link>
@@ -22,6 +24,7 @@ function Navigation() {
             <li className=''>
                 <Link
                     to='/Contact'
+                    aria-label='Contact'
                     className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}>
                     Contact Me
                 </Link>
@@ -29,6 +32,7 @@ function Navigation() {
             <li className=''>
                 <Link
                     to='/Resume'
+                    aria-label='Resume'
                     className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}>
                     Resume
                 </Link>
