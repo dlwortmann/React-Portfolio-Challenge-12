@@ -14,13 +14,13 @@ div#project {
     display: hidden !important;
   }
   
-  #portfolio-button {
-    background-color: #db791a;
+  #project-button {
+    background-color: #16262E;
     color: white;
   }
   
-  #portfolio-button:hover {
-    background-color: #e99d51;
+  #project-button:hover {
+    background-color: #2E4756;
     color: white;
   }
   

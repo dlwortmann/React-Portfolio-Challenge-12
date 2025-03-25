@@ -1,0 +1,13 @@
+.headerParent {
+    background-color: #C3DBC5;
+    height: "20vh";
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw;
+  }
+  
+  #header-text {
+    font-size: xx-large;
+    color: #16262e;
+    justify-content: center;
+  }

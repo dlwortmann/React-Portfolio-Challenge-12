@@ -77,7 +77,7 @@ function Project () {
     return (
         <Grid2 size={{ xs: 4 }} style={{ display: "flex", justifyContent: "center"}}>
             {projects.map(project => (
-            <Card key={project.id} sx={{ maxWidth: 345 }} style= {{ backgroundColor: "floralwhite" }}>
+            <Card key={project.id} sx={{ maxWidth: 345 }} style= {{ backgroundColor: "#e8DCB9" }}>
                 <CardMedia
                 component= "img"
                 alt="projects displayed with active links"
