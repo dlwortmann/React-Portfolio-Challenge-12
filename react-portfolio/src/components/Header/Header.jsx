@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Navigation from './Navigation';
-import About from './About';
-import Portfolio from './Portfolio';
-import Contact from './Contact';
-import Resume from './Resume';
+import Navigation from '../Navigation/Navigation';
+import About from '../About/About';
+import Portfolio from '../Portfolio/Portfolio';
+import Contact from '../Contact/Contact';
+import Resume from '../Resume/Resume';
 import { Outlet } from 'react-router-dom'
 
 export function Header() {
