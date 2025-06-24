@@ -7,30 +7,32 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import "./Projects.css"
-import WeatherDash from "../../assets/weatherdashboard.png"
+import WeatherDash from "../../assets/WeatherDashboard.png"
 import FitJourney from "../../assets/FitJourney.png"
+import CreepyCryptids from "../../assets/CreepyCryptids.png"
+import BookSearch from "../../assets/BookSearch.png"
 
 function Project () {
     const projects = [
         {
             id: 0,
-            title: "FitJourney",
-            languages: "HTML, CSS, JS",
+            title: "Creepy Cryptids & Haunted Hangouts",
+            languages: "TypeScript, React, Apollo",
             packages: "express.js",
-            image: FitJourney,
-            description: "First group project",
-            repo: "https://github.com/dlwortmann/Fit-Journey-Project-1",
-            live: "https://dlwortmann.github.io/Fit-Journey-Project-1/",
+            image: CreepyCryptids,
+            description: "Final Group Project",
+            repo: "https://github.com/VampMina528/Creepy-Cryptids-and-Haunted-Hangouts",
+            live: "https://creepy-cryptids-and-haunted-hangouts.onrender.com/",
         },
         {
             id: 1,
-            title: "WeatherDashboard",
+            title: "Book Search Engine",
             languages: "Javascript",
             packages: "express.js",
-            image: WeatherDash,
-            description: "App that gets weather data",
-            repo: "https://github.com/dlwortmann/Weather-Dashboard-Challenge-09",
-            live: "https://weather-dashboard-challenge-09-1.onrender.com/",
+            image: BookSearch,
+            description: "Refactored code to allow books to be saved or deleted on a user profile.",
+            repo: "https://github.com/dlwortmann/Book-Search-Engine-Challenge",
+            live: "https://book-search-engine-challenge-application.onrender.com",
         },
         {
             id: 2,
@@ -44,16 +46,6 @@ function Project () {
         },
         {
             id: 3,
-            title: "WeatherDashboard",
-            languages: "Javascript",
-            packages: "express.js",
-            image: WeatherDash,
-            description: "App that gets weather data",
-            repo: "https://github.com/dlwortmann/Weather-Dashboard-Challenge-09",
-            live: "https://weather-dashboard-challenge-09-1.onrender.com/",
-        },
-        {
-            id: 4,
             title: "FitJourney",
             languages: "HTML, CSS, JS",
             packages: "express.js",
@@ -62,16 +54,26 @@ function Project () {
             repo: "https://github.com/dlwortmann/Fit-Journey-Project-1",
             live: "https://dlwortmann.github.io/Fit-Journey-Project-1/",
         },
-        {
-            id: 5,
-            title: "FitJourney",
-            languages: "HTML, CSS, JS",
-            packages: "express.js",
-            image: FitJourney,
-            description: "First group project",
-            repo: "https://github.com/dlwortmann/Fit-Journey-Project-1",
-            live: "https://dlwortmann.github.io/Fit-Journey-Project-1/",
-        },
+        // {
+        //     id: 4,
+        //     title: "FitJourney",
+        //     languages: "HTML, CSS, JS",
+        //     packages: "express.js",
+        //     image: FitJourney,
+        //     description: "First group project",
+        //     repo: "https://github.com/dlwortmann/Fit-Journey-Project-1",
+        //     live: "https://dlwortmann.github.io/Fit-Journey-Project-1/",
+        // },
+        // {
+        //     id: 5,
+        //     title: "FitJourney",
+        //     languages: "HTML, CSS, JS",
+        //     packages: "express.js",
+        //     image: FitJourney,
+        //     description: "First group project",
+        //     repo: "https://github.com/dlwortmann/Fit-Journey-Project-1",
+        //     live: "https://dlwortmann.github.io/Fit-Journey-Project-1/",
+        // },
     ];
     
     return (
