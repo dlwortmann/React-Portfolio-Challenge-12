@@ -1,60 +1,71 @@
-div#project {
-    display: flex;
-    height: 23vh;
-    /* background-image: url(); */
-    background-size: contain;
-    background-repeat: no-repeat;
+/* Container for project - flexbox with fixed height */
+#project {
+  display: flex;
+  height: 23vh;
+  /* Uncomment and add your background image URL here */
+  /* background-image: url('your-image-path'); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Optional: align items center */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; /* show pointer on hover */
+}
+
+/* On hover, apply blur effect */
+#project:hover {
+  filter: blur(4px);
+}
+
+/* Hide element with id projTitle */
+#projTitle {
+  display: none !important; /* corrected from 'hidden' to 'none' */
+}
+
+/* Button base styles */
+#project-button {
+  background-color: #16262E;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none; /* if anchor */
+  display: inline-block;
+}
+
+/* Button hover styles */
+#project-button:hover {
+  background-color: #2E4756;
+  color: white;
+}
+
+/* Pop-on-hover animation keyframes */
+@-webkit-keyframes pop-on-hover {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
   }
-  
-  #project:hover {
-    filter: blur(4px);
+}
+
+@keyframes pop-on-hover {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
   }
-  
-  #projTitle {
-    display: hidden !important;
-  }
-  
-  #project-button {
-    background-color: #16262E;
-    color: white;
-  }
-  
-  #project-button:hover {
-    background-color: #2E4756;
-    color: white;
-  }
-  
-  @-webkit-keyframes pop-on-hover {
-    50% {
-      -webkit-transform: scale(1.2);
-      transform: scale(1.2);
-    }
-  }
-  
-  @keyframes pop-on-hover {
-    50% {
-      -webkit-transform: scale(1.2);
-      transform: scale(1.2);
-    }
-  }
-  
-  .pop-on-hover {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  }
-  
-  .pop-on-hover:hover,
-  .pop-on-hover:focus,
-  .pop-on-hover:active {
-    -webkit-animation-name: pop-on-hover;
-    animation-name: pop-on-hover;
-    -webkit-animation-duration: 0.3s;
-    animation-duration: 0.3s;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-  }
+}
+
+/* Base style for elements that pop on hover */
+.pop-on-hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition: transform 0.3s ease;
+}
+
+/* Trigger pop*/

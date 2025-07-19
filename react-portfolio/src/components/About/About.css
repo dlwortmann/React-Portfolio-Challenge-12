@@ -1,0 +1,37 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* allows stacking on small screens */
+  }
+  
+  .profile-photo {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0; /* prevent shrinking */
+  }
+  
+  .bio {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ddd;
+    text-align: left;
+  }
+  
+  /* Responsive adjustment */
+  @media (max-width: 600px) {
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    .bio {
+      text-align: center;
+    }
+  }
+  

@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import "./Navigation.css"
 
 function Navigation() {
     const currentPage = useLocation().pathname;
     return (
         <nav>
-            <ul className=''>
-                <li className=''>
+            <ul>
+                <li>
                     <Link
                         to='/'
                         aria-label='About'
@@ -14,7 +15,7 @@ function Navigation() {
                         About Me
                     </Link>
                 </li>
-                <li className=''>
+                <li>
                     <Link
                         to='/Portfolio'
                         aria-label='Portfolio'
@@ -22,7 +23,7 @@ function Navigation() {
                         My Portfolio
                     </Link>
                 </li>
-                <li className=''>
+                <li>
                     <Link
                         to='/Contact'
                         aria-label='Contact'
@@ -30,7 +31,7 @@ function Navigation() {
                         Contact Me
                     </Link>
                 </li>
-                <li className=''>
+                <li>
                     <Link
                         to='/Resume'
                         aria-label='Resume'

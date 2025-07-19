@@ -1,43 +1,40 @@
-#icon {
-    color: #322217;
-  }
-  
-  #icon:hover {
-    color: #db791a;
-    cursor: pointer;
-  }
-  
-  @-webkit-keyframes pop-on-hover {
-    50% {
-      -webkit-transform: scale(1.2);
-      transform: scale(1.2);
-    }
-  }
-  
-  @keyframes pop-on-hover {
-    50% {
-      -webkit-transform: scale(1.2);
-      transform: scale(1.2);
-    }
-  }
-  
-  .pop-on-hover {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  }
-  
-  .pop-on-hover:hover,
-  .pop-on-hover:focus,
-  .pop-on-hover:active {
-    -webkit-animation-name: pop-on-hover;
-    animation-name: pop-on-hover;
-    -webkit-animation-duration: 0.3s;
-    animation-duration: 0.3s;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-  }
+footer {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+footer div {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+footer hr {
+  margin: 1rem auto;
+  width: 50%;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+footer section {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+footer a {
+  color: #ffdd57;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+footer a:hover,
+footer a:focus {
+  color: white;
+  outline: none;
+}

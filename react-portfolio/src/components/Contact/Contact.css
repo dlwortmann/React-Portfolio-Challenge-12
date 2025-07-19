@@ -1,0 +1,76 @@
+/* Contact.css */
+
+.contact-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #16262E;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin: 12px 0 6px;
+    font-weight: 600;
+    color: #16262E;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1.5px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #4A90E2;
+    box-shadow: 0 0 5px rgba(74,144,226, 0.5);
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  .contact-form button {
+    margin-top: 20px;
+    padding: 12px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #16262E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #284754;
+  }
+  
+  p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  p.error-message {
+    color: #d9534f;
+  }
+  
+  p.success-message {
+    color: #5cb85c;
+  }
+  

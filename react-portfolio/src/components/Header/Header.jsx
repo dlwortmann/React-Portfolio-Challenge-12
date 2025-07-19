@@ -1,19 +1,21 @@
 import React, { useState } from "react";
 import Navigation from '../Navigation/Navigation';
 import { Outlet } from 'react-router-dom'
+import Footer from "../Footer/Footer";
+import "./Header.css"
 
 function Header() {
     const [currentPage, setCurrentPage] = useState("/About")
 
     return (
-        <div className="headerParent" style={{ padding: "0px 0px 10px 43px"}}>
-            <h1 id="header-text">Danny Wortmann</h1>
-            <nav>
+        <div className="headerParent">
+            <h1>Danny Wortmann</h1>
+            <h2>Junior Web Developer</h2>
             <Navigation
             currentPage={currentPage}
             setCurrentPage={setCurrentPage}/>
             <Outlet />
-            </nav>
+    
        
         </div>
     )

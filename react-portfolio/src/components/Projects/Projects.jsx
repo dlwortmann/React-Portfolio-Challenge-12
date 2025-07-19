@@ -77,44 +77,61 @@ function Project () {
     ];
     
     return (
-        <Grid2 size={{ xs: 4 }} style={{ display: "flex", justifyContent: "center"}}>
-            {projects.map(project => (
-            <Card key={project.id} sx={{ maxWidth: 345 }} style= {{ backgroundColor: "#e8DCB9" }}>
+        <Grid2 
+          container 
+          spacing={4} 
+          justifyContent="center" 
+          sx={{ padding: 2 }}
+          columns={{ xs: 4, sm: 8, md: 12 }}  // define total number of columns per breakpoint
+          columnSpacing={3}
+          rowSpacing={3}
+        >
+          {projects.map((project) => (
+            <Grid2 key={project.id}>
+              <Card sx={{ maxWidth: 345, backgroundColor: "#e8DCB9" }}>
                 <CardMedia
-                component= "img"
-                alt="projects displayed with active links"
-                height="140"
-                image={project.image} 
+                  component="img"
+                  alt={project.title}
+                  height="140"
+                  image={project.image}
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                        {project.title}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                        {project.description}
-                    </Typography>
+                  <Typography gutterBottom variant="h5" component="div">
+                    {project.title}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {project.description}
+                  </Typography>
                 </CardContent>
-                <CardActions style={{ justifyContent: "center"}}>
-                    <Button
-                    id="project-button"
+                <CardActions sx={{ justifyContent: "center" }}>
+                  <Button 
                     className="pop-on-hover"
                     href={project.live}
-                    size="small">
-                        Deployed App
-                    </Button>
-                    <Button
-                    id="project-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    size="small"
+                    variant="contained"
+                    color="primary"
+                  >
+                    Deployed App
+                  </Button>
+                  <Button
                     className="pop-on-hover"
                     href={project.repo}
-                    size="small">
-                        GitHub Repo
-                    </Button>
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    size="small"
+                    variant="outlined"
+                    color="primary"
+                  >
+                    GitHub Repo
+                  </Button>
                 </CardActions>
-            </Card>
-            ))}
-        </Grid2>    
+              </Card>
+            </Grid2>
+          ))}
+        </Grid2>
+      );
+    }
     
-    )
-}
-
-export default Project;
+    export default Project;
