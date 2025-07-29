@@ -1,6 +1,31 @@
-div {
+.resume-container {
     display: flex;
-    flex-wrap: column;
+    flex-direction: column;
     justify-content: center;
-    color: black
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 2rem;
 }
+
+.resume-button {
+    padding: 0.5rem 1rem;
+    background-color: #16262E;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    border: 2px solid white;
+    pointer-events: auto;
+    cursor: pointer;
+  }
+  
+  .resume-button:hover {
+    background-color: #2E4756;
+  }
+  

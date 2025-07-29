@@ -22,6 +22,7 @@
   background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
   animation: pulse 4s ease-in-out infinite;
   z-index: 0;
+  pointer-events: none;
 }
 
 @keyframes pulse {
@@ -53,24 +54,3 @@
   margin-bottom: 1rem;
   text-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
-
-
-
-/* .headerParent {
-    background-color: #C3DBC5;
-    justify-content: center;
-  }
-  
-  h1 {
-    font-size: xx-large;
-    color: #16262e;
-    justify-content: center;
-    margin: 0%;
-  }
-
-  h2 {
-    font-size: larger;
-    color: #16262e;
-    margin: 0%;
-  }
-   */

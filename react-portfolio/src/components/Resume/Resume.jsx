@@ -1,21 +1,24 @@
 import React from 'react';
 import { Download } from 'lucide-react'
+import './Resume.css'
 
 function Resume() {
-    return (
-        <div>
-            Click the link below for a downloadable resume! References available upon request.
-            <hr />
-        <a
+  return (
+    <div className='resume-container'>
+      <p>Click the link below for a downloadable resume! References available upon request. </p>
+      <a
         href="/resume.pdf"
+        target='_blank'
         download
-        className="flex items-center gap-2 bg-blue-600 hover:bg-blue-800 text-white font-semibold py-2 px-4 rounded"
+        rel='noopener noreferrer'
+        className="resume-button"
       >
+        
         <Download size={20} />
         Resume
       </a>
-      </div>
-    )
+    </div>
+  )
 };
 
 export default Resume;
