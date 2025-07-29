@@ -28,7 +28,7 @@ function Contact() {
         e.preventDefault();
         setErrorMessage('');
         setSuccessMessage('');
-
+    
         if (!validateEmail(email) || !userName) {
             setErrorMessage("Please enter a valid username and email.");
             return;
@@ -37,15 +37,32 @@ function Contact() {
             setErrorMessage("Please enter a message.");
             return;
         }
-
-        // Here you could add sending logic (API call, email service, etc.)
-
-        setSuccessMessage("Thank you for your message!");
-        setUserName("");
-        setEmail("");
-        setMessage("");
+    
+        fetch("http://localhost:5000/api/contact", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ userName, email, message })
+        })
+        .then(response => {
+            if (response.ok) {
+                setSuccessMessage("Thank you for your message!");
+                setUserName("");
+                setEmail("");
+                setMessage("");
+            } else {
+                return response.json().then(data => {
+                    setErrorMessage(data.message || "Failed to send message.");
+                });
+            }
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            setErrorMessage("Something went wrong. Please try again.");
+        });
     };
-
+    
     return (
         <div className='contact-container'>
             <form className="contact-form" onSubmit={handleSubmit}>
