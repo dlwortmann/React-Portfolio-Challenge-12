@@ -4,5 +4,5 @@
   command = "npm run build"
 
 [functions]
-  directory = "../netlify/functions"
+  directory = "reactportfolio/netlify/functions"
   node_bundler = "esbuild"
