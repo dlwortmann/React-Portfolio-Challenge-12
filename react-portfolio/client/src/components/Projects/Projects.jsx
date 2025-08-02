@@ -7,7 +7,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import "./Projects.css"
-import WeatherDash from "../../assets/weatherdashboard.png"
+import WeatherDash from "../../assets/WeatherDashboard.png"
 import FitJourney from "../../assets/FitJourney.png"
 import CreepyCryptids from "../../assets/CreepyCryptids.png"
 import BookSearch from "../../assets/BookSearch.png"
