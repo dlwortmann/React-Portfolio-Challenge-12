@@ -1,8 +1,8 @@
 [build]
-  base = "client"
-  publish = "client/dist"
+  base = "react-portfolio/client"
+  publish = "react-portfolio/client/dist"
   command = "npm run build"
 
 [functions]
-  directory = "netlify/functions"
+  directory = "react-portfolio/netlify/functions"
   node_bundler = "esbuild"
