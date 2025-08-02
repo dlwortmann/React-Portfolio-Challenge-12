@@ -1,6 +1,6 @@
 [build]
   base = "react-portfolio/client"
-  publish = "react-portfolio/client/dist"
+  publish = "dist"
   command = "npm run build"
 
 [functions]
