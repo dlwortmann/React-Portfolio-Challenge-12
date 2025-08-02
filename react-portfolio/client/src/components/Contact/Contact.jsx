@@ -38,7 +38,7 @@ function Contact() {
             return;
         }
     
-        fetch("http://localhost:5000/api/contact", {
+        fetch("/.netlify/functions/contact", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

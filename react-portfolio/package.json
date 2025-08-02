@@ -2,13 +2,15 @@
     "name": "my-portfolio",
     "type": "module",
     "scripts": {
-      "client": "cd client && npm start",
-      "server": "cd server && node server.js",
-      "dev": "concurrently \"npm run client\" \"npm run server\"",
-      "build": "cd client && npm install && npm run build"
+        "client": "cd client && npm start",
+        "server": "cd server && node server.js",
+        "dev": "concurrently \"npm run client\" \"npm run server\"",
+        "build": "cd client && npm install && npm run build"
     },
     "devDependencies": {
-      "concurrently": "^8.2.0"
+        "concurrently": "^8.2.0"
+    },
+    "dependencies": {
+        "nodemailer": "^7.0.5"
     }
-  }
-  
+}
